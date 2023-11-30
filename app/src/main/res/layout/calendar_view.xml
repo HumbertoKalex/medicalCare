@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/teal_200"
+    android:padding="12dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:src="@drawable/baseline_circle_black_18"
+        android:tint="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtHora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/imgIcon"
+        app:layout_constraintLeft_toRightOf="@id/imgIcon"
+        app:layout_constraintTop_toTopOf="@id/imgIcon"
+        app:layout_constraintVertical_bias="0.571"
+        tools:text="10:00 - 11:00" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="Meeting UI/UX flow with team"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@id/imgCheck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtHora"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtSubTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="8sp"
+        app:layout_constraintEnd_toStartOf="@+id/imgCheck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        tools:text="Define rules and project structure" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_check_circle_24"
+        app:tint="@color/green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
